@@ -1,0 +1,71 @@
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background-color: rgb(179, 255, 255);
+}
+.news{
+    background-color: rgb(84, 84, 155);
+}
+.contacts{
+    background-color: rgb(159, 117, 117);
+}
+.portfolio{
+    background-color: rgb(38, 70, 38);
+}
+
+.wraper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.menu{
+  position: fixed;  
+  left: 0; top:0;
+  width: 30%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu_active{
+    transform: translateX(0%);
+}
+
+.menu-list{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+.menu-list a {
+    text-decoration:none ;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.menu-button{
+    height: 30px;
+    width: 30px;
+    background-color: #060202;
+    position: absolute;
+    right: -35px;
+    top:10px;
+}
+
+
+/*img{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}*/
